@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<body>
+<script>
+
+
+var hours = prompt("Enter number of hours worked");
+var rate = prompt("Enter your hourly rate");
+var pay = hours * rate
+var overtime = hours - 40; 
+var overtimePay = hours * rate + .5 * rate * overtime;
+
+
+var addPay = function(hours, rate, pay, overtime, overtimePay){
+    if(hours <= 40){
+        console.log("Your total hours are", hours);
+        console.log("Your hourly rate is", rate);
+        console.log("Your pay without overtime is", pay);
+}else if(hours >40){
+    console.log("Your total hours are", hours);
+    console.log("Your hourly rate is", rate);
+    console.log("Your pay with overtime is", overtimePay);
+ }
+}
+addPay(hours, rate, pay, overtime, overtimePay);
+</script>
+</body>
+</html>
