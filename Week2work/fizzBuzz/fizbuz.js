@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<body>
-<script>
+//This function lists the status of only the number entered.
 fzbznum = prompt("enter a number between 0 and 100");
  
 var fizzedBuzzed = function(fzbznum){
@@ -21,7 +19,7 @@ fizzedBuzzed(fzbznum);
 
 
 
-
+//different method below lists ALL numbers to chosen number
 
 for (var fzbznumAuto = 1; fzbznumAuto < 100; fzbznumAuto ++){
     if(fzbznumAuto % 15 === 0){
@@ -34,7 +32,3 @@ for (var fzbznumAuto = 1; fzbznumAuto < 100; fzbznumAuto ++){
     console.log(fzbznumAuto);
 }
 }
-
-</script>
-</body>
-</html>

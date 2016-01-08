@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<body>
-<script>
-
-
 var hours = prompt("Enter number of hours worked");
 var rate = prompt("Enter your hourly rate");
 
@@ -24,6 +19,3 @@ var overtimePay = hours * rate + .5 * rate * overtime;
  }
 }
 addPay();
-</script>
-</body>
-</html>
