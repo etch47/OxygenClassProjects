@@ -1,0 +1,279 @@
+“  ”.length
+
+//   comments
+
+confirm   ( “     “);                             ask for user interaction 
+prompt    (“      “);                            both of these make pop up input boxes appear
+document.write  writes to a web page
+numbers just type the number
+
+strings need quotes    
+
+console.log       will take whatever is inside the parentheses and log it to the console below 
+                         your code. 
+
+ >
+<
+>=
+<=
+*            ===        EQUAL TO
+*            !==         NOT EQUAL TO   
+
+
+
+                      
++
+-
+*
+/
+
+%  MODULO     returns remainder only
+
+
+
+++   increment by one               i ++
+--    decrement by one               i --
+
++=   increment by variable         i  += x
+-=    decrement by variable       i    -= x
+
+
+----------------------------------------------------------------------------------------------------
+
+SUBSTRING
+"some word".substring(x, y)where x is where you start chopping and y is where you finish chopping the original string.
+ To select  the "he" in "hello", you would write this:
+"hello". substring(0, 2);
+number to right is one above the place you need to chop
+variables
+
+var  variableName = value
+
+-----------------------------------------------------------------------
+-First off, a quick review of what if statements look like.
+A typical if () statement looks like this. Depending on what you are checking for, the else if and else blocks may not be needed. Note how the { }, ( ) and ; are used.
+if (this condition is true) {
+    do something;
+} else if {
+    do this other thing;
+} else if {
+    do this awesome thing;
+} else {
+    do something different;
+}
+
+
+
+if ( a < b) {
+    do something here;
+}
+else if (a > b) {
+    do this other thing;
+}
+else {
+    do something different;
+}
+
+------------------------------------------------------------------------
+
+functions 
+
+First declare a function using var, and then give it a name 
+var name = function(parameter) {
+do something      parameter ;                                                        semicolon
+};                                                                                                    semicolon
+
+
+At the end of each line of code (within the { }) and after the entire function (after the {}), 
+put a semi-colon. 
+
+
+
+example 
+var foodDemand = function(food)
+{
+    console.log("I want to eat" + " " + food)
+};
+
+foodDemand("pizza")
+
+another function example
+
+var orangeCost = function(cost){
+    var orangeTotal = cost * 5;
+    console.log (orangeTotal);
+};
+    orangeCost(5.00)
+
+--------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+one more example
+
+var quarter = function(number){
+    return number / 4;
+
+    }; 
+if (quarter(120) % 3 === 0 ) {
+ console.log("The statement is true");                                  (this statement is true)
+} else {                                                                                   120 / 4  = 30
+  console.log("The statement is false");                                 30 % 3 === 0
+}
+
+
+
+function example with if / else statement
+
+var compare = function(choice1, choice2){
+
+    if (choice1 === choice2){
+    
+        return "The result is a tie!";                                       semicolon
+    }
+};                                                                                       semicolon
+
+
+
+function if else
+var functionName = function(parameter, parameter) {
+  if (condition1) {
+    //do something
+  }
+  else if (condition2) {
+    //do something
+  }
+  else {
+    //do something
+  }
+}
+
+
+
+
+
+
+
+
+
+ 
+-----------------------------------------------------------------------------------------
+two parameter example
+var perimeterBox = function(length, width){
+    var rectangle = length + length + width + width;
+    return rectangle;
+};
+
+perimeterBox(94, 47)
+
+
+
+------------------------------------------------------------------------------------------
+
+ 
+
+
+
+
+
+
+global scope
+
+
+var my_number = 7;                  //this has global scope
+
+var timesTwo = function(number) {
+    var my_number = number * 2;  if I use “var” here, this becomes a new local variable.                               console.log("Inside the function my_number is: ");
+    console.log(my_number);
+}; 
+
+timesTwo(7);
+
+console.log("Outside the function my_number is: ")
+console.log(my_number);
+
+----------------------------------------------------------------------------------
+
+FOR LOOPS  
+
+for (start; end; increment) {
+    // Do something!
+}
+
+
+for (var i = 100; i>=5; i-=5){      this loop starts at 100, counts down in increments of five,
+    console.log(i);                         and ends at the number five.   
+}
+
+
+
+
+ARRAYS   
+
+Syntax:
+var arrayName = [data, data, data];
+
+uses  [   ]    
+store lists of data
+can store different data types
+are ordered. each piece of data is fixed.
+
+The position of things in arrays is fixed. So we just need to know the array name 
+ and the position of the data we want. The position (or the index) of each bit of data is counted starting from 0, not 1.
+
+
+var names = ['Dave', 'Tom', 'John', 'Eric', 'Peter'];                     array
+for (var i = 0; i < names.length; i ++){                                        starts at zero, increments
+    console.log("I know someone called " + names[i]);               through list by one
+}
+
+
+
+WHILE LOOPS   
+'While' loops are like 'for' loops, only they don't need a counter—they continue to run until their condition is met.
+The while loop is ideal when you want to use a loop, but you don't know how many times you'll have to execute that loop.
+WHILE LOOP SYNTAX 
+ while(condition){
+    // Do something!
+}
+-----------------------------------------------------------------------------------
+DO/ WHILE LOOPS:
+Will do something once then check to see if the condition is true. in this example the DO is executed once, then it stops because the bool is false
+
+var loopCondition = false;
+do {
+          console.log("I'm gonna stop looping 'cause my condition is " + loopCondition + "!");	
+} while (loopCondition);
+
+
+
+isNaN  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
