@@ -13,20 +13,22 @@ namespace RockPaperScissors
         {
             
             Game RPSGame = new Game();
-//RPSGame.endGame();
-            RPSGame.ComputerChoice();
-            RPSGame.PlayerChoice();
-            RPSGame.RPSGameResult();
-            RPSGame.EnumerateCompTurn();
-            RPSGame.EnumeratePlayerTurn();
-           
-            
-            
-            
-            
-           
+            //RPSGame.endGame();
 
-           
+            
+            RPSGame.RPSGameCompResult();
+            RPSGame.RPSGamePlayerResult();
+            
+
+
+
+
+
+
+
+
+
+
 
         }
     }

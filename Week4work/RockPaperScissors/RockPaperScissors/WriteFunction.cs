@@ -7,7 +7,7 @@ using System.IO;
 
 namespace RockPaperScissors
 {
-    public class WriteText : Game
+    public class WriteText
     {
         public static void RPSwriter()
         {

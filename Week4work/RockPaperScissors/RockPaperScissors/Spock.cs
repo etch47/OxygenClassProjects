@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RockPaperScissors
 {
-    public class Spock : Game
+    public class Spock
     {
         public void spockSlaysRock()
         {
